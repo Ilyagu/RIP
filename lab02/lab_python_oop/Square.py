@@ -1,4 +1,4 @@
-from .Rectangle import Rectangle
+from lab_python_oop.Rectangle import Rectangle
 
 class Square(Rectangle):
 
@@ -15,7 +15,7 @@ class Square(Rectangle):
     def __repr__(self):
         return '{} {} цвета со стороной {} площадью {}.'.format(
             Square.get_figure_type(),
-            self.col_par.colour,
+            self.col_par._colour,
             self.side,
             self.area()
         )

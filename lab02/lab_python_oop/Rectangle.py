@@ -21,7 +21,7 @@ class Rectangle(Figure):
     def __repr__(self):
         return '{} {} цвета шириной {} и высотой {} площадью {}.'.format(
             Rectangle.get_figure_type(),
-            self.col_par.colour,
+            self.col_par._colour,
             self.width,
             self.length,
             self.area()

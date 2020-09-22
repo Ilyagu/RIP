@@ -1,12 +1,12 @@
-from .Rectangle import Rectangle
-from lab_python_oop.circle import Circle
-from lab_python_oop.square import Square
+from lab_python_oop.Rectangle import Rectangle
+from lab_python_oop.Circle import Circle
+from lab_python_oop.Square import Square
 
 
 def main():
-    r = Rectangle(3, 2,"синего")
-    c = Circle(5,"зеленого")
-    s = Square(5,"красного")
+    r = Rectangle(12, 12,"синего")
+    c = Circle(12,"зеленого")
+    s = Square(12,"красного")
     print(r)
     print(c)
     print(s)

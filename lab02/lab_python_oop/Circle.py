@@ -1,5 +1,5 @@
-from .figure import Figure
-from .Colour import Colour
+from lab_python_oop.figure import Figure
+from lab_python_oop.Colour import Colour
 from math import pi
 
 class Circle(Figure):
@@ -21,7 +21,7 @@ class Circle(Figure):
     def __repr__(self):
         return '{} {} цвета радиусом {} площадью {}.'.format(
             Circle.get_figure_type(),
-            self.col_par.colour,
+            self.col_par._colour,
             self._radius,
             self.area()
         )
