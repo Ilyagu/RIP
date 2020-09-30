@@ -5,7 +5,7 @@ from colorama import Back,Fore,Style
 
 def main():
     r = Rectangle(12, 12,"синего")
-    c = Circle(12,"зеленого")
+    c = Circle(12,"зелёного")
     s = Square(12,"красного")
     print(Back.BLUE)
     print(r)
