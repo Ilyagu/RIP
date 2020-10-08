@@ -1,7 +1,7 @@
 def print_result(func_to_decorate):
-    def decorated_func():
+    def decorated_func(*args):
         print(func_to_decorate.__name__)
-        result = func_to_decorate()
+        result = func_to_decorate(*args)
         if type(result) is list:
             for i in result:
                 print(i)
@@ -10,7 +10,11 @@ def print_result(func_to_decorate):
                 print(i, result.get(i), sep=' = ')
         else:
             print(result)
-    return decorated_func()
+
+        return result
+
+    return decorated_func
+
 
 
 @print_result
@@ -34,6 +38,7 @@ def test_4():
 
 
 if __name__ == '__main__':
+    print('!!!!!!!!!!!!!!!')
     test_1()
     test_2()
     test_3()
