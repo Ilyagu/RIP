@@ -26,7 +26,7 @@ def cm_timer_2():
 if __name__ == '__main__':
 
     with cm_timer_1():
-        sleep(5.5)
+        sleep(3.5)
 
     with cm_timer_2():
         sleep(2.5)

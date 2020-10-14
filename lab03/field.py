@@ -18,11 +18,17 @@ def field(items, *args):
 
 goods = [
     {'title': 'Ковер', 'price': 2000, 'color': 'green'},
-    {'title': 'Диван для отдыха', 'price': 5300, 'color': 'blue'}
+    {'title': 'Диван для отдыха', 'color': 'blue'},
+    {'title': 'Пуфик', 'price': 5000, 'color': 'red'}
 ]
 f=field(goods,'title', 'price')
 for i in f:
     print(i, end=', ')
+print('\n')
+f = field(goods, 'price', 'color')
+for i in f:
+    print(i, end=', ')
+print('\n')
 f = field(goods,'title')
 for i in f:
     print(i, end=', ')

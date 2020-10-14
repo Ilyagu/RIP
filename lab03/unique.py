@@ -2,20 +2,20 @@ import gen_random
 
 
 class Unique(object):
-    def __init__(self,items, **kwargs):
-        self.used_elements=set()
-        self.items=items
-        self.index=0
-        if len(kwargs)!=0:
-            self.ignore_case=kwargs
+    def __init__(self, items, **kwargs):
+        self.used_elements = set()
+        self.items = items
+        self.index = 0
+        if len(kwargs) != 0:
+            self.ignore_case = kwargs
         else:
-            self.ignore_case=False
+            self.ignore_case = False
 
     def __next__(self):
         while True:
             for item in self.items:
-                temp_item=item
-                self.index+=1
+                temp_item = item
+                self.index += 1
                 if (temp_item not in self.used_elements) \
                         and not(self.ignore_case and temp_item.swapcase() in self.used_elements):
                     self.used_elements.add(temp_item)
