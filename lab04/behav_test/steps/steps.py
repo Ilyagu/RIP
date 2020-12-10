@@ -5,7 +5,7 @@ from behav import SquareDetail
 from behav import SquareDetailAdapter
 
 
-@given('size of round detail - radius "{detail_size}" and size of round hole - "{hole_radius}"')
+@given('size of round detail - radius "{detail_size}" and size of round hole - "cd..{hole_radius}"')
 def step(context, detail_size, hole_radius):
     context.round_detail = RoundDetail(int(detail_size))
     context.hole = RoundHole(int(hole_radius))

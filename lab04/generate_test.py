@@ -16,7 +16,7 @@ class AbstractFactoryTestCase(TestCase):
     def test_win_window_hr(self, get_res):
         dialog = WindowsDialog()
         self.assertEqual("Создание и отрисовка Windows диалога с разрешением 2560x1600",
-                         dialog.paint(get_res("platform")))
+                         dialog.paint(get_res("OlegKozinov")))
 
     # проверка верной отрисовки диалога на Windows с разрешением 1600x1200
     # функцию get_res делаем Mock-объектом аналогично прошлому тесту
