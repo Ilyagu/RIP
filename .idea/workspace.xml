@@ -20,10 +20,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="67e7653f-f9c0-4d2e-bde8-05423d90cf37" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/lab08/project/shop/templates/shop/detail.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lab08/project/shop/templates/shop/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lab08/project/shop/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab08/project/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/lab08/project/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab08/project/shop/apps.py" beforeDir="false" afterPath="$PROJECT_DIR$/lab08/project/shop/apps.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab08/project/shop/templates/shop/detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/lab08/project/shop/templates/shop/detail.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,6 +49,12 @@
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="GitIgnore" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\5sem\RIP\lab08" />
+    </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
