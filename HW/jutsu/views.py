@@ -24,9 +24,24 @@ def character(request, anime_id):
     for i in anime_list:
         if i.id == anime_id:
             anime = i
-    char_list = get_list_or_404(Сharacter, name=anime_id)
-    return render(request, 'jutsu/detail_char.html', {'anime': anime,
-                                                      'char_list': char_list})
+    if request.method == "GET":
+        char_list = get_list_or_404(Сharacter, name=anime_id)
+        return render(request, 'jutsu/detail_char.html', {'anime': anime,
+                                                          'char_list': char_list})
+    elif request.method == "POST":
+        anime.name = request.POST.get("anime_name")
+        anime.release_time = request.POST.get("anime_release")
+        anime.save()
+        # name_group_change = request.POST.get("group_name")
+        # for group in group_list:
+        #     if group.name == name_group_change:
+        #         group_change = group
+        #         break
+        # for schedule in schedule_list:
+        #     if schedule.group == group_change:
+        #         schedule.lesson_time = request.POST.get("lesson_time")
+        #         schedule.save()
+        return HttpResponseRedirect(f"/jutsu/{anime_id}/")
 
 
 def genres(request, genre_name):
@@ -39,4 +54,5 @@ def genres(request, genre_name):
     for i in anime_genre_list:
         anime_list.append(i.anime)
     return render(request, 'jutsu/index.html', {'genre_name': genre_name,
-                                                'anime_list': anime_list})
+                                                'anime_list': anime_list,
+                                                'genre_list': genre_list})

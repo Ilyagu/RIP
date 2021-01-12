@@ -43,7 +43,7 @@
 <main class="bg-dark">
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container-fluid modal-header">
-            <a class="navbar-brand" href="{% url 'jutsu:index' %}">IC5</a>
+            <a class="navbar-brand" href="{% url 'jutsu:index' %}">JUTSU</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -81,12 +81,17 @@
                         <a href="{% url 'jutsu:detail_char' anime.id %}"><h2>{{anime.name}}</h2></a>
                     </td>
                     <td class="align-middle" rowspan="4">
-                        <a href="{% url 'jutsu:detail_char' anime.id %}"><img src={{anime.img}} class="rounded img-fluid" style="max-width: 100%; height: auto"></a>
+                        <a href="{% url 'jutsu:detail_char' anime.id %}"><img src={{anime.img}} class="rounded img-fluid" style="max-width: 90%; height: auto"></a>
                     </td>
                 </tr>
                 <tr>
-                    <td>
-
+                    <td class="align-bottom" style="text-align: right" width="60%">
+                        <h5>Жанры: </h5>
+                        {% for genre in anime.genres.all %}
+                            <a href="{% url 'jutsu:index' genre %}">
+                                <h5>{{genre}}</h5>
+                            </a>
+                        {% endfor %}
                     </td>
                 </tr>
                 <tr>

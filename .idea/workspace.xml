@@ -20,12 +20,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="67e7653f-f9c0-4d2e-bde8-05423d90cf37" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/HW/jutsu/templates/jutsu/detail_char.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HW/jutsu/templates/jutsu/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HW/jutsu/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab07/lab07.html" beforeDir="false" afterPath="$PROJECT_DIR$/lab07/lab07.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HW/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/HW/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HW/jutsu/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/HW/jutsu/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HW/jutsu/templates/jutsu/detail_char.html" beforeDir="false" afterPath="$PROJECT_DIR$/HW/jutsu/templates/jutsu/detail_char.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HW/jutsu/templates/jutsu/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/HW/jutsu/templates/jutsu/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HW/jutsu/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/HW/jutsu/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

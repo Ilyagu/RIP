@@ -1,12 +1,20 @@
 from django.db import models
 
 
+class Genre(models.Model):
+    name = models.CharField(max_length=50)
+
+    def __str__(self):
+        return self.name
+
+
 class Anime(models.Model):
     name = models.CharField(max_length=50)
     release_time = models.CharField(max_length=10)
     description = models.CharField(max_length=700)
     img = models.CharField(max_length=200)
     head_img = models.CharField(max_length=200)
+    genres = models.ManyToManyField(Genre, through='Anime_Genre')
 
 
     def __str__(self):
@@ -23,14 +31,6 @@ class Сharacter(models.Model):
 
     def __str__(self):
         return self.name_char
-
-
-class Genre(models.Model):
-    name = models.CharField(max_length=50)
-    animes = models.ManyToManyField(Anime, through='Anime_Genre')
-
-    def __str__(self):
-        return self.name
 
 
 class Anime_Genre(models.Model):
