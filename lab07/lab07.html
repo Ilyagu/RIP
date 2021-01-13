@@ -202,15 +202,33 @@
         </div>
     </nav>
 
-    <img src="https://sun9-15.userapi.com/d466-pY9MjiHkAwWw8uOv-tVg3lP2NEpsVq9rA/GkyBnGv39Is.jpg" class="rounded img-fluid" style="max-width: 100%; height: auto">
     <table class="table table-dark table-borderless">
         <tbody>
             <tr>
-                <td class="align-bottom" style="text-align: right" width="50%">
-                    <a href="https://www.microsoft.com/ru-ru"><h2>Почему мы</h2></a>
-                </td>
                 <td class="align-middle" rowspan="2">
-                    <a href="https://www.microsoft.com/ru-ru"><img src=".\img\first.jpg" class="rounded img-fluid" style="max-width: 100%; height: auto"></a>
+                    <div class="row">
+            <div class="col-4">
+            <table class="table table-dark table-borderless">
+            <tbody>
+                <tr>
+                    <td class="align-bottom" style="text-align: right" width="40%">
+                        <h1>{{char.name_char}}</h1>
+                    </td>
+                    <td class="align-middle" rowspan="4">
+                        <img src={{char.img}} class="rounded img-fluid" style="max-width: 100%; height: auto">
+                    </td>
+                </tr>
+                <tr>
+                    <td class="align-bottom" style="text-align: right" width="40%">
+                        <h4>{{char.sag}}</h4>
+                </tr>
+                <tr>
+                    <td class="align-middle" style="text-align: right" width="40%"><h4>{{char.side}}</h4>
+                </tr>
+            </tbody>
+            </table>
+            </div>
+        </div>
                 </td>
             </tr>
             <tr>
@@ -227,7 +245,6 @@
             </tr>
             <tr>
 
-                <td class="align-middle" style="text-align: left" width="50%">Товарищи! реализация намеченных плановых заданий позволяет оценить значение соответствующий условий активизации. С другой стороны постоянный количественный рост и сфера нашей активности способствует подготовки и реализации систем массового участия. Задача организации, в особенности же новая модель организационной деятельности способствует подготовки и реализации дальнейших направлений развития. С другой стороны постоянное информационно-пропагандистское обеспечение нашей деятельности способствует подготовки и реализации системы обучения кадров, соответствует насущным потребностям.<br>Повседневная практика показывает, что новая модель организационной деятельности обеспечивает широкому кругу (специалистов) участие в формировании новых предложений. Равным образом рамки и место обучения кадров обеспечивает широкому кругу (специалистов) участие в формировании модели развития. Таким образом консультация с широким активом способствует подготовки и реализации систем массового участия.</td>
             </tr>
         </tbody>
     </table>
@@ -279,3 +296,44 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
 </body>
 </html>
+
+{% if char_list_lol %}
+            {% for char in char_list %}
+            <tr>
+                <td class="align-middle" rowspan="2">
+                        <div class="row">
+                            <div class="col-10">
+                            <table class="table table-dark table-borderless">
+                            <tbody>
+                                <tr>
+                                    <td class="align-bottom" style="text-align: right" width="40%">
+                                        <h1>{{char.name_char}}</h1>
+                                    </td>
+                                    <td class="align-middle" rowspan="4">
+                                        <img src={{char.img}} class="rounded img-fluid" style="max-width: 100%; height: auto">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="align-bottom" style="text-align: right" width="40%">
+                                        <h4>{{char.sag}}</h4>
+                                </tr>
+                                <tr>
+                                    <td class="align-middle" style="text-align: right" width="40%"><h4>{{char.side}}</h4>
+                                </tr>
+                            </tbody>
+                            </table>
+                            </div>
+                        </div>
+                </td>
+            </tr>
+            {% endfor %}
+            {% else %}
+                <p>No group are available.</p>
+            {% endif %}
+
+
+{% if char.0.id == 1 %}
+    <img src="{% static "jutsu/images/characters/madara.jpg" %}" style="max-width: 80%; height: auto">
+{% else %}
+    <img src={{char_list.0.img}} class="rounded img-fluid" style="max-width: 80%; height: auto">
+{% endif %}
